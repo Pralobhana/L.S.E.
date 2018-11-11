@@ -16,7 +16,7 @@ void cria_lista_inv()
 	struct ptr *aux;
 	printf("ENTRE COM O VALOR: ");
 	scanf("%d", &valor);
-	if (valor >= 0)
+	if(valor >= 0)
 	{
 		aux = (struct ptr *)malloc(sizeof(struct ptr));
 		aux->valor = valor;
