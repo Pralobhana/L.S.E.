@@ -36,7 +36,7 @@ void mostra(struct ptr *aux)
     else 
     {
         if(aux != (struct ptr *)NULL) 
-	{
+	 {
             printf("%d\t", aux->valor);
             aux = aux->prox;
             mostra(aux);
