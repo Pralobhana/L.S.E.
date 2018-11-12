@@ -1,15 +1,19 @@
 #include <stdio.h>
+
 struct ptr 
 {
 	int valor;
 	struct ptr *prox;
 };
+
 struct ptr *inicio, *aux;
 void cria_lista_inv(struct ptr *aux);
+
 int main()
 {
 	cria_lista_inv((struct ptr *)NULL);
 }
+
 void cria_lista_inv(struct ptr *aux)
 {
 	int valor;
