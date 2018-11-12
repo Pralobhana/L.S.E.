@@ -1,17 +1,21 @@
 #include <stdio.h>
+
 struct ptr 
 {
 	int valor;
 	struct ptr *prox;
 };
+
 struct ptr *inicio, *aux;
 void cria_lista_inv(struct ptr *aux);
 float media(struct ptr *aux, int soma, int cont);
+
 int main()
 {
 	cria_lista_inv((struct ptr *)NULL);
 	printf("\nMEDIA DOS ELEMENTOS DA LISTA: %.1f", media(inicio, 0, 0));
 }
+
 void cria_lista_inv(struct ptr *aux)
 {
 	int valor;
@@ -27,6 +31,7 @@ void cria_lista_inv(struct ptr *aux)
 	}
 	aux = (struct ptr *)NULL;
 }
+
 float media(struct ptr *aux, int soma, int cont)
 {
 	if(aux != (struct ptr *)NULL)
