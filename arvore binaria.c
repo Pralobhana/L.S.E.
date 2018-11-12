@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 struct arvore
 {
     char valor;
@@ -26,7 +27,7 @@ int main()
     nos_nivel(altura(inicio, 0, 0), 0);
 }
 
-//constr骾 a 醨vore bin醨ia
+//constr贸i a 谩rvore bin谩ria
 void constroi(struct arvore **inicio)
 {
     char n;
@@ -43,7 +44,7 @@ void constroi(struct arvore **inicio)
         *inicio = (struct arvore *)NULL;
 }
 
-//retorna o total de n髎 da 醨vore
+//retorna o total de n贸s da 谩rvore
 int tot_nos(struct arvore *aux, int cont)
 {
     if(aux == inicio)
@@ -57,7 +58,7 @@ int tot_nos(struct arvore *aux, int cont)
     return cont;
 }
 
-//retorna o total de n髎 folha
+//retorna o total de n贸s folha
 int tot_folha(struct arvore *aux, int cont)
 {
     if(aux == inicio)
@@ -72,7 +73,7 @@ int tot_folha(struct arvore *aux, int cont)
     return cont;
 }
 
-//retorna a altura da 醨vore
+//retorna a altura da 谩rvore
 int altura(struct arvore *aux, int maior, int nivel)
 {
     if(aux != (struct arvore*)NULL)
@@ -85,7 +86,7 @@ int altura(struct arvore *aux, int maior, int nivel)
     return maior;
 }
 
-//retorna a quantidade de n髎 por n韛el
+//retorna a quantidade de n贸s por n铆vel
 int nos_nivel(int altura, int nivel)
 {
     if(nivel <= altura)
@@ -95,7 +96,7 @@ int nos_nivel(int altura, int nivel)
     }
 }
 
-//retorna o n鷐ero de n髎 em um dado nivel
+//retorna o n煤mero de n贸s em um dado nivel
 int foo(struct arvore *aux, int nivel, int cont, int n)
 {
     if(aux != (struct arvore*)NULL)
@@ -109,7 +110,7 @@ int foo(struct arvore *aux, int nivel, int cont, int n)
     return cont;
 }
 
-//printa a 醨vore de maneira infixa
+//printa a 谩rvore de maneira infixa
 void infix(struct arvore *arv)
 {
 	if(arv != NULL)
