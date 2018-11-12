@@ -1,17 +1,21 @@
 #include <stdio.h>
+
 struct ptr 
 {
 	int valor;
 	struct ptr *prox;
 };
+
 struct ptr *inicio;
 void cria_lista();
 void mostra();
+
 int main()
 {
 	cria_lista();
 	mostra();
 }
+
 void cria_lista()
 {
 	int valor;
@@ -30,6 +34,7 @@ void cria_lista()
 	}
 	aux = (struct ptr *)NULL;
 }
+
 void mostra()
 {
 	struct ptr *aux;
