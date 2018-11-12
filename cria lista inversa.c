@@ -1,15 +1,19 @@
 #include <stdio.h>
+
 struct ptr 
 {
 	int valor;
 	struct ptr *prox;
 };
+
 struct ptr *inicio;
 void cria_lista();
+
 int main()
 {
 	cria_lista();
 }
+
 void cria_lista()
 {
 	int valor;
