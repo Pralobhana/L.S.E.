@@ -1,17 +1,21 @@
 #include <stdio.h>
+
 struct ptr 
 {
 	int valor;
 	struct ptr *prox;
 };
+
 struct ptr *inicio, *aux;
 void cria_lista_inv(struct ptr *aux);
 void conta(struct ptr *aux, int cont);
+
 int main()
 {
 	cria_lista_inv((struct ptr *)NULL);
 	conta(inicio, 0);
 }
+
 void cria_lista_inv(struct ptr *aux)
 {
     int valor;
@@ -29,6 +33,7 @@ void cria_lista_inv(struct ptr *aux)
     }
     aux = (struct ptr *)NULL;
 }
+
 void conta(struct ptr *aux, int cont)
 {
 	if(aux != (struct ptr *)NULL)
