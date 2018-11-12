@@ -1,19 +1,23 @@
 #include <stdio.h>
+
 struct ptr
 {
 	int valor;
 	struct ptr *prox;
 };
+
 struct ptr *inicio;
 void cria_lista_inv();
 void inserir_fim();
 void mostra();
+
 int main()
 {
 	cria_lista_inv();
 	inserir_fim();
 	mostra();
 }
+
 void cria_lista_inv()
 {
 	int valor;
@@ -32,6 +36,7 @@ void cria_lista_inv()
 	}
 	aux = (struct ptr *)NULL;
 }
+
 void inserir_fim()
 {
 	struct ptr *aux;
@@ -54,6 +59,7 @@ void inserir_fim()
 		aux->prox = (struct ptr *)NULL;
 	}
 }
+
 void mostra()
 {
 	struct ptr *aux;
