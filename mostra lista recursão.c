@@ -1,17 +1,21 @@
 #include <stdio.h>
+
 struct ptr 
 {
     int valor;
     struct ptr *prox;
 };
+
 struct ptr *inicio, *aux;
 void cria_lista_inv(struct ptr *aux);
 void mostra(struct ptr *aux);
+
 int main()
 {
     cria_lista_inv((struct ptr *)NULL);
     mostra(inicio);
 }
+
 void cria_lista_inv(struct ptr *aux)
 {
     int valor;
@@ -29,6 +33,7 @@ void cria_lista_inv(struct ptr *aux)
     }
     aux = (struct ptr *)NULL;
 }
+
 void mostra(struct ptr *aux)
 {
     if(inicio == (struct ptr *)NULL)
